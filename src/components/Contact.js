@@ -38,7 +38,8 @@ const neonPink = "#ff4ccd";
 
 const styles = {
   section: {
-        boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+    width: "90%",
     maxWidth: "600px",
     margin: "4rem auto",
     padding: "2.5rem 1.5rem",
@@ -49,16 +50,17 @@ const styles = {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   heading: {
-    fontSize: "2.2rem",
+    fontSize: "clamp(1.8rem, 2.5vw, 2.5rem)",
     marginBottom: "1.2rem",
   },
   pink: {
     color: neonPink,
   },
   text: {
-    fontSize: "1.1rem",
+    fontSize: "clamp(1rem, 2vw, 1.1rem)",
     marginBottom: "1rem",
     color: "#ccc",
+    lineHeight: 1.6,
   },
   email: {
     display: "inline-block",
@@ -66,17 +68,20 @@ const styles = {
     color: neonPink,
     textDecoration: "none",
     marginBottom: "1.5rem",
+    wordBreak: "break-word",
   },
   social: {
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "center",
-    gap: "1.5rem",
+    gap: "1.2rem",
     marginTop: "1.5rem",
   },
   socialLink: {
     color: neonPink,
     textDecoration: "none",
     fontWeight: "600",
+    fontSize: "1rem",
     transition: "color 0.3s ease",
   },
 };

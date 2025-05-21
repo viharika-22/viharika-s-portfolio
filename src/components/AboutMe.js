@@ -1,6 +1,13 @@
 import React from "react";
 import myPhoto from '../assets/myPhoto.jpeg';
-import { FaLocationArrow, FaBirthdayCake, FaFlag, FaLaptop , FaGraduationCap, FaBuilding } from 'react-icons/fa';
+import {
+  FaLocationArrow,
+  FaBirthdayCake,
+  FaFlag,
+  FaLaptop,
+  FaGraduationCap,
+  FaBuilding,
+} from 'react-icons/fa';
 
 const AboutMe = () => {
   return (
@@ -10,27 +17,26 @@ const AboutMe = () => {
       </h2>
       <div style={styles.container}>
         <div style={styles.textContainer}>
-<p style={styles.paragraph}>
-  I’m a Front-End Developer with 3+ years of building fast, scalable web apps using React, Redux, and REST APIs—aka the front-end dream team.
-</p>
-<p style={styles.paragraph}>
-  I’m all about creating clean, responsive UIs that work seamlessly across devices. I’ve worked on high-impact projects in telecom and enterprise, where performance and accessibility are key.
-</p>
-<p style={styles.paragraph}>
-  I thrive in Agile teams, where collaboration and continuous learning are at the core of building great products.
-</p>
-<p style={styles.paragraph}>
-  Outside of work, I’m usually reading, planning my next trip, or exploring new dev tools.
-</p>
+          <p style={styles.paragraph}>
+            I’m a Front-End Developer with 3+ years of building fast, scalable web apps using React, Redux, and REST APIs—aka the front-end dream team.
+          </p>
+          <p style={styles.paragraph}>
+            I’m all about creating clean, responsive UIs that work seamlessly across devices. I’ve worked on high-impact projects in telecom and enterprise, where performance and accessibility are key.
+          </p>
+          <p style={styles.paragraph}>
+            I thrive in Agile teams, where collaboration and continuous learning are at the core of building great products.
+          </p>
+          <p style={styles.paragraph}>
+            Outside of work, I’m usually reading, planning my next trip, or exploring new dev tools.
+          </p>
 
-<div style={styles.infoGrid}>
-  <div style={styles.infoItem}><FaLocationArrow /> <strong>Location:</strong> Bengaluru, India</div>
-  <div style={styles.infoItem}><FaFlag /> <strong>Nationality:</strong> Indian</div>
-  <div style={styles.infoItem}><FaGraduationCap /> <strong>Study:</strong> GITAM University</div>
-  <div style={styles.infoItem}><FaBuilding /> <strong>Employment:</strong> TCS</div>
-  <div style={styles.infoItem}><FaLaptop /> <strong>Interests:</strong> UI design, Travel, Creative</div>
-</div>
-
+          <div style={styles.infoGrid}>
+            <div style={styles.infoItem}><FaLocationArrow /> <strong>Location:</strong> Bengaluru, India</div>
+            <div style={styles.infoItem}><FaFlag /> <strong>Nationality:</strong> Indian</div>
+            <div style={styles.infoItem}><FaGraduationCap /> <strong>Study:</strong> GITAM University</div>
+            <div style={styles.infoItem}><FaBuilding /> <strong>Employment:</strong> TCS</div>
+            <div style={styles.infoItem}><FaLaptop /> <strong>Interests:</strong> UI design, Travel, Creative</div>
+          </div>
         </div>
         <div style={styles.imageContainer}>
           <img
@@ -48,8 +54,8 @@ const neonPink = "#ff4ccd";
 
 const styles = {
   section: {
-        boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
-    borderRadius:10,
+    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+    borderRadius: 10,
     padding: "2rem",
     backgroundColor: "#121212",
     color: "#fff",
@@ -74,8 +80,8 @@ const styles = {
     flexWrap: "wrap",
   },
   textContainer: {
-    flex: 2,
-    minWidth: "300px",
+    flex: "2 1 60%",
+    minWidth: "280px",
   },
   paragraph: {
     marginBottom: "1.2rem",
@@ -85,7 +91,7 @@ const styles = {
   },
   infoGrid: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     gap: "1rem",
     marginTop: "1rem",
     fontSize: "1rem",
@@ -97,8 +103,8 @@ const styles = {
     gap: "0.5rem",
   },
   imageContainer: {
-    flex: 1,
-    minWidth: "250px",
+    flex: "1 1 30%",
+    minWidth: "220px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -106,7 +112,7 @@ const styles = {
   image: {
     borderRadius: "20px",
     width: "100%",
-    maxWidth: "300px",
+    maxWidth: "280px",
     objectFit: "cover",
     boxShadow: "0 8px 16px rgba(0,0,0,0.4)",
   },

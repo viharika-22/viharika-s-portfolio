@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import img from "../assets/worksetup.jpeg";
 
-const words = ["slick", "modern", "cool-looking","elegant","smooth"];
+const words = ["slick", "modern", "cool-looking", "elegant", "smooth"];
 
 const PortfolioCard = () => {
   const [index, setIndex] = useState(0);
@@ -102,8 +102,10 @@ const neonPink = "#ff4ccd";
 const styles = {
   container: {
     display: "flex",
+    flexDirection: "row",
     flexWrap: "wrap",
-    maxWidth: 900,
+    width: "90%",
+    maxWidth: "1000px",
     margin: "4rem auto",
     borderRadius: 20,
     overflow: "hidden",
@@ -115,17 +117,16 @@ const styles = {
   image: {
     width: "100%",
     maxWidth: "450px",
+    flex: "1 1 300px",
     objectFit: "cover",
-    flex: 1,
   },
   infoPanel: {
-    flex: 1,
+    flex: "1 1 300px",
     padding: "2rem",
-    minWidth: "300px",
   },
   codeText: {
     fontFamily: "'Fira Code', monospace",
-    fontSize: "0.9rem",
+    fontSize: "clamp(0.8rem, 1.5vw, 1rem)",
     marginBottom: "0.5rem",
     color: "#fff",
   },
@@ -138,7 +139,7 @@ const styles = {
     overflow: "hidden",
   },
   heading: {
-    fontSize: "2.8rem",
+    fontSize: "clamp(2rem, 4vw, 2.8rem)",
     margin: "0.2rem 0 1rem 0",
   },
   socialIcons: {
@@ -146,6 +147,7 @@ const styles = {
     gap: "1rem",
     fontSize: "1.4rem",
     marginBottom: "1.2rem",
+    flexWrap: "wrap",
   },
   icon: {
     color: "#ffffff",
@@ -158,7 +160,7 @@ const styles = {
   },
   description: {
     lineHeight: 1.5,
-    fontSize: "1.1rem",
+    fontSize: "clamp(1rem, 2vw, 1.1rem)",
     marginBottom: "1rem",
     color: "#ddd",
   },
@@ -172,7 +174,7 @@ const styles = {
     padding: "0.7rem 1.8rem",
     borderRadius: 30,
     fontWeight: "bold",
-    fontSize: "1rem",
+    fontSize: "clamp(0.9rem, 2vw, 1rem)",
     cursor: "pointer",
     textDecoration: "none",
     userSelect: "none",

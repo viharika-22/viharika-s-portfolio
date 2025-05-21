@@ -12,7 +12,6 @@ const skills = [
   { name: "Node.js", level: 70 },
 ];
 
-
 const CoreTech = () => {
   return (
     <section id="core-tech" style={styles.section}>
@@ -24,7 +23,12 @@ const CoreTech = () => {
           <div key={name} style={styles.skill}>
             <div style={styles.skillName}>{name}</div>
             <div style={styles.skillBarBackground}>
-              <div style={{ ...styles.skillBarFill, width: `${level}%` }}></div>
+              <div
+                style={{
+                  ...styles.skillBarFill,
+                  width: `${level}%`,
+                }}
+              />
             </div>
           </div>
         ))}
@@ -37,9 +41,10 @@ const neonPink = "#ff4ccd";
 
 const styles = {
   section: {
-        boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+    width: "90%",
     maxWidth: "900px",
-    margin: "3rem auto 4rem", // bottom margin for space after
+    margin: "3rem auto 4rem",
     padding: "2rem 1rem",
     backgroundColor: "#121212",
     color: "#fff",
@@ -47,7 +52,7 @@ const styles = {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   heading: {
-    fontSize: "2.5rem",
+    fontSize: "clamp(1.8rem, 2.5vw, 2.5rem)",
     fontWeight: "bold",
     marginBottom: "2rem",
     textAlign: "center",
@@ -56,6 +61,7 @@ const styles = {
     color: neonPink,
   },
   skillsContainer: {
+    width: "100%",
     maxWidth: "600px",
     margin: "0 auto",
   },
@@ -66,13 +72,14 @@ const styles = {
     fontWeight: "600",
     marginBottom: "0.5rem",
     color: "#ccc",
-    fontSize: "1.1rem",
+    fontSize: "clamp(1rem, 2.5vw, 1.1rem)",
   },
   skillBarBackground: {
     backgroundColor: "#1c1c1c",
     borderRadius: "20px",
     height: "16px",
     boxShadow: "inset 0 1px 3px rgba(0,0,0,0.4)",
+    width: "100%",
   },
   skillBarFill: {
     height: "100%",
