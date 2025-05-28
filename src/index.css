@@ -1,0 +1,65 @@
+/* Reset + base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #ddd;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 100%;
+}
+
+/* Project Card Hover */
+.project-card {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+/* Responsive Container Padding */
+@media (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .project-card img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+}
