@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/viharika-s-portfolio/static/css/main.23d9c499.css",
-    "main.js": "/viharika-s-portfolio/static/js/main.de9f6817.js",
+    "main.js": "/viharika-s-portfolio/static/js/main.d8e81906.js",
+    "static/media/domain_Name.png": "/viharika-s-portfolio/static/media/domain_Name.34698c084343667b6ba1.png",
     "static/media/trello-img.png": "/viharika-s-portfolio/static/media/trello-img.77bfb1004b8859ffec2c.png",
     "static/media/rand-que.png": "/viharika-s-portfolio/static/media/rand-que.d72563d2529269f8eb74.png",
     "static/media/worksetup.jpeg": "/viharika-s-portfolio/static/media/worksetup.21352a85e9cec70e6714.jpeg",
     "static/media/myPhoto.jpeg": "/viharika-s-portfolio/static/media/myPhoto.917fd53440bd19966017.jpeg",
     "index.html": "/viharika-s-portfolio/index.html",
     "main.23d9c499.css.map": "/viharika-s-portfolio/static/css/main.23d9c499.css.map",
-    "main.de9f6817.js.map": "/viharika-s-portfolio/static/js/main.de9f6817.js.map"
+    "main.d8e81906.js.map": "/viharika-s-portfolio/static/js/main.d8e81906.js.map"
   },
   "entrypoints": [
     "static/css/main.23d9c499.css",
-    "static/js/main.de9f6817.js"
+    "static/js/main.d8e81906.js"
   ]
 }
